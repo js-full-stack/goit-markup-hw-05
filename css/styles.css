@@ -475,6 +475,7 @@ img {
   letter-spacing: var(--letter);
   color: var(--header-text-color);
   background-color: var(--bck-section-white);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .radio-btn .item:not(:first-child) {
@@ -485,6 +486,7 @@ img {
 .btn:focus {
   color: var(--accent-white-color);
   background-color: var(--accent-blue-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Список портфолио */
@@ -496,11 +498,13 @@ img {
 .portfolio .item {
   width: calc((100% - 30px * 2) / 3);
   border: 1px solid #eeeeee;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio .item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio .item:not(:nth-child(3n)) {
   margin-right: 30px;

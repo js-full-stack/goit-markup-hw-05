@@ -14,6 +14,7 @@
   --bck-section-white: #f5f4fa;
   /* Стили шрифтов */
   --letter: 0.03em;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -120,14 +121,14 @@ img {
 
 .site-nav .link {
   color: var(--header-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition);
 }
 
 .contacts .link {
   color: var(--primary-text-color);
   display: flex;
   align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition);
 }
 
 .site-nav .link:hover,
@@ -137,7 +138,7 @@ img {
 .link:hover .icon-address,
 .link:focus .icon-address {
   color: var(--accent-blue-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition);
 }
 
 .site-nav .link.current {
@@ -178,7 +179,7 @@ img {
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
+  /* max-width: 1600px; */
 
   background-color: var(--secondary-bck-color);
   background-image: linear-gradient(
@@ -187,6 +188,7 @@ img {
     ),
     url("../images/hero.jpg");
   background-position: center;
+  background-size: cover;
 
   text-align: center;
 }
@@ -421,19 +423,19 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all var(--transition);
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-blue-color);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all var(--transition);
 }
 
 .social-link:hover .icon-social,
 .social-link:focus .icon-social {
   fill: var(--accent-white-color);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all var(--transition);
 }
 
 .item-soc:not(:last-child) {
@@ -463,19 +465,19 @@ img {
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all var(--transition);
 }
 
 .logo-clients-link:hover,
 .logo-clients-link:focus {
   color: var(--accent-blue-color);
   border: solid var(--accent-blue-color) 1px;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all var(--transition);
 }
 
 .logo-clients-link:hover .icon-logo {
   fill: var(--accent-blue-color);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all var(--transition);
 }
 
 .list-regular-costumers .item {
@@ -531,7 +533,7 @@ img {
   letter-spacing: var(--letter);
   color: var(--header-text-color);
   background-color: var(--bck-section-white);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all var(--transition);
 }
 
 .radio-btn .item:not(:first-child) {
@@ -542,7 +544,7 @@ img {
 .btn:focus {
   color: var(--accent-white-color);
   background-color: var(--accent-blue-color);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all var(--transition);
 }
 
 /* Оверлей */
@@ -560,7 +562,7 @@ img {
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition);
 }
 
 .portfolio .item:hover .overlay-portfolio {
@@ -582,13 +584,13 @@ img {
 .portfolio .item {
   width: calc((100% - 30px * 2) / 3);
   border: 1px solid #eeeeee;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--transition);
 }
 
 .portfolio .item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--transition);
 }
 .portfolio .item:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -598,12 +600,10 @@ img {
   margin-bottom: 50px;
 }
 
-.img-portfolio {
-  padding-bottom: 20px;
-}
-
 .desc-portfolio {
   margin-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .title-portfolio {

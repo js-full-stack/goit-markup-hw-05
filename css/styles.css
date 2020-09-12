@@ -138,7 +138,6 @@ img {
 .link:hover .icon-address,
 .link:focus .icon-address {
   color: var(--accent-blue-color);
-  transition: color var(--transition);
 }
 
 .site-nav .link.current {
@@ -429,13 +428,11 @@ img {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-blue-color);
-  transition: all var(--transition);
 }
 
 .social-link:hover .icon-social,
 .social-link:focus .icon-social {
   fill: var(--accent-white-color);
-  transition: all var(--transition);
 }
 
 .item-soc:not(:last-child) {
@@ -472,7 +469,6 @@ img {
 .logo-clients-link:focus {
   color: var(--accent-blue-color);
   border: solid var(--accent-blue-color) 1px;
-  transition: all var(--transition);
 }
 
 .logo-clients-link:hover .icon-logo {
@@ -544,7 +540,6 @@ img {
 .btn:focus {
   color: var(--accent-white-color);
   background-color: var(--accent-blue-color);
-  transition: all var(--transition);
 }
 
 /* Оверлей */
@@ -590,7 +585,6 @@ img {
 .portfolio .item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow var(--transition);
 }
 .portfolio .item:not(:nth-child(3n)) {
   margin-right: 30px;

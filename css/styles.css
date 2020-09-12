@@ -248,7 +248,6 @@ img {
   transform: translate(-50%, -50%);
   min-width: 528px;
   min-height: 581px;
-
   background-color: var(--accent-white-color);
 }
 
@@ -521,7 +520,6 @@ img {
   border: none;
   min-width: 73px;
   border-radius: 4px;
-
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;

@@ -253,7 +253,7 @@ img {
 }
 
 .backdrop.is-hidden .modal-windows {
-  transform: scale(0.7);
+  transform: translate(-50%, -50%) scale(0.7);
 }
 
 .btn-modal-close {

@@ -172,11 +172,6 @@ img {
   fill: currentColor;
 }
 
-/* .icon-address {
-  margin-right: 10px;
-  fill: currentColor;
-} */
-
 /* Герой */
 .wrap-hero {
   padding-top: 200px;
@@ -218,6 +213,7 @@ img {
 /* Кнопка под блоком-героем */
 .button {
   border: none;
+  border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
   font-size: 16px;
